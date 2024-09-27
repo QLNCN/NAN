@@ -26,8 +26,8 @@
 
 </head>
 <body>
-<h1>随机点菜器</h1>
-<button id="randomDishButton">给我来份菜</button>
+<h1>随机选择器</h1>
+<button id="randomDishButton">点我</button>
 <p id="dish"></p>
 
 <script>
@@ -50,11 +50,13 @@
             "一楼饭",
             "三楼饭",
             "水煮饭",
-            "糖水"
+            "糖水",
+            "Yes",
+            "No"
         ];
 
         var randomDish = dishes[Math.floor(Math.random() * dishes.length)];
-        document.getElementById('dish').innerText = "今天为您推荐：" + randomDish;
+        document.getElementById('dish').innerText = "那就：" + randomDish;
     });
 </script>
 </body>
